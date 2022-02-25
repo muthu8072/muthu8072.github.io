@@ -159,6 +159,7 @@
 		}
 		h2{
 			margin: 0.7rem;
+			text-decoration: underline;
 		}
 
 
@@ -217,8 +218,9 @@
 		}
 		.about-contact{
 			display: flex;
-			justify-content:center;
 			align-items: center;
+			margin: 0;
+			padding: 0;
 		}
 		.about-contact {
 			margin: 0 !important;
@@ -270,6 +272,12 @@
         	height: 150px;
         	border-radius: 10px;
         	margin: 0.5rem;
+		    align-items: center;
+		    border-radius: 10px;
+		    background-color: var(--bgcolor);
+		    margin: 0.4rem;
+		    padding: 1rem;
+		    box-shadow: rgb(255 255 255 / 5%) -1vmin -1vmin 1vmin, rgb(0 0 0 / 30%) 1vmin 1vmin 1vmin;
         }
         .slider p:hover img{
         	transform:translateY(-50px)scale(1.2);
@@ -322,12 +330,10 @@
      <div class="about" id="about">
      	<h2 style="text-align: center;">About Me </h2>
      	<div class="about-content">
-     		<p style="">
      			<img src="./image/muthu.svg" height="150px"></p>
-     			<p >hello,i am muthuraja final year engineering stutent <br>first time create in this page.i learn more technologyes <br>and create new web pages.</p>
-
-		</div>     		
-		<ul class="about-contact">
+     			<div>
+     			<p >hello,i am muthuraja final year engineering stutent.<br>Having Passion on technology.</p>
+     			<ul class="about-contact">
      			<li>
      				<a href="https://github.com/muthu8072">
      					<i class="fab fa-github"> </i>
@@ -340,17 +346,21 @@
 
      			</li>
      		</ul>
+     	</div>
+
+		</div>     		
+		
      	
      </div>
      
 
      
       <div class="raja" id="skills">
-      	<h2 style="color: #FFF"> My Skills </h2>
+      	<h2 style="color: #FFF" >Skills </h2>
        <div class="slider_wrapper">
 	        <div class="slider">
-	        	<img src="./image/java.jpg"alt="java">
-	        	<img src="./image/python.jpg"alt="python">
+	        	<img src="./image/java.svg"alt="java">
+	        	<img src="./image/python.png"alt="python">
 	        	<img src="./image/html.png"alt="html">
 	        	<img src="./image/css.png"alt="css">
 	        </div>
