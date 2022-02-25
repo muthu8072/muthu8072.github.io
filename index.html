@@ -45,7 +45,7 @@
 			
 		}
 		.wrapper a{
-		    background: crimson;   
+		    background: #3fb477;   
 			color: #fff;
 			text-decoration: none;
 			padding:10px 25px;
@@ -79,7 +79,7 @@
 			background-image: url(1.jfif);
 		    background-blend-mode: hard-light;
 		    background-color: #15225178;
-			background-size: cover;
+			background-size: 100% 100%;
 			background-repeat: no-repeat;
 			font-family: poppins;
 		    height: 100vh;
@@ -94,7 +94,7 @@
 			margin: 0;
 		    position: fixed;
 		    padding: 0;
-		    width: 100%;
+		    width: 100vw;
 		    z-index: 111;
 		    background-color: #0ab377;
 
@@ -189,6 +189,7 @@
 			
 			
 		}
+		
 		.about{
 			padding: 0.5rem;
 		}
@@ -198,8 +199,8 @@
 		    align-items: center;
 		    flex-wrap: wrap;
 		    margin: 0.5rem;
-		    box-shadow: 0 0 2px #c4c7cc;
-		    background-color: rgba(196,199,204,.2);
+		    /*box-shadow: 0 0 2px #c4c7cc;*/
+		    /*background-color: rgba(196,199,204,.2);*/
 		}
 		.about-content img,
 		.about-content p{
@@ -223,15 +224,22 @@
  			padding: 0.5rem;
  			border-radius: 10px
 		}
+		.slider_wrapper{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
 	    .slider{
         	position: relative;
-        	width: 200px;
-        	height: 200px;
         	transform-style:preserve-3d;
-        	animation: rotate 30s linear infinite;
+        	/*animation: rotate 30s linear infinite;*/
         	text-align: center;
-        	margin-top: 10%;
-        	margin-left: 40%;
+        	margin-top: 10px;
+        	display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-wrap:wrap; 
+
 
         }
         @keyframes rotate{
@@ -253,20 +261,22 @@
         	transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
 
         }
-        .slider p img{
-        	position: absolute;
-        	top:0;
-        	left:0;
-        	width: 80%;
-        	height: 80%;
-        	border-radius: 100px;
-        	object-fit: cover;
-        	transition: 2s;
-
+        .slider  img{
+        	width: 150px;
+        	height: 150px;
+        	border-radius: 10px;
+        	margin: 0.5rem;
         }
         .slider p:hover img{
         	transform:translateY(-50px)scale(1.2);
         }
+        @media (max-width:500px) {
+				.slider  img{
+					height: 100px;
+					width: 100px;
+				}
+		}
+
 	</style>
 
 	<script src="https://kit.fontawesome.com/a076do5399.js"></script>
@@ -279,7 +289,7 @@
      		<li><a href="#"> home</a></li>
      		<li><a href="#about">About</a></li>
      		<li><a href="#skills">Skills</a></li>
-     	</ul>
+     	</ul>	
      </div>
      
      <div class="wrapper">
@@ -290,7 +300,7 @@
        
 
 
-     <div class="about">
+     <div class="about" id="about">
      	<h2 style="text-align: center;">About Me </h2>
      	<div class="about-content">
      		<p style=""><img src="7.jfif"></p>
@@ -315,29 +325,16 @@
      
 
      
-      <div class="raja">
+      <div class="raja" id="skills">
       	<h2 style="color: #FFF"> My Skills </h2>
-       <!-- <div class="fish">
-      	<div class="kumar">
-      	<div class="puppy">
-        <img src="2.png">
-      	<img src="3.png">
-      	<img src="4.jpg">
-      	<img src="5.jpg">
-      	<img src="8.jfif">
-      	<img src="9.jfif">
-        </div>
-        </div>
-        </div>-->
-        <div class="slider">
-        	
-        	<p style="--i:2;"><img src="2.png"alt=""> </p>
-        	<p style="--i:3;"><img src="3.png"alt=""> </p>
-        	<p style="--i:4;"><img src="4.jpg"alt=""> </p>
-        	<p style="--i:5;"><img src="5.jpg"alt=""> </p>
-        	<!--<p style="--i:8;"><img src="8.jfif"alt=""> </p>
-        	<p style="--i:9;"><img src="9.jfif"alt=""> </p>-->
-        </div>
+       <div class="slider_wrapper">
+	        <div class="slider">
+	        	<img src="2.png"alt="">
+	        	<img src="3.png"alt="">
+	        	<img src="4.jpg"alt="">
+	        	<img src="5.jpg"alt="">
+	        </div>
+	    </div>
         </div>
 
  
