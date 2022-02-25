@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<title>Arunachelam web page</title>
+	<style>
+		body{
+              background-color: #152251;
+              color: white;
+              padding: 0;
+              margin: 0;
+              font-family: 'Ubuntu';
+
+			}
+		
+		ul li{
+			letter-spacing: 2px;
+			padding: 15px;
+			text-transform: uppercase;
+			display: inline-block;
+			font-weight: bold;
+			font-size:18px;
+			font-family: sans-serif;
+		}
+		
+		
+		.wrapper{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			
+		}
+		.wrapper h1{
+			padding: 0;
+			margin: 0;
+			color:#fff;
+			text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+			font-size: 2.5rem;
+			text-transform: uppercase;
+		}
+		.wrapper p{
+			color: #fff;
+			margin: 0;
+			
+		}
+		.wrapper a{
+		    background: #3fb477;   
+			color: #fff;
+			text-decoration: none;
+			padding:10px 25px;
+			border-radius: 5px;
+			display: inline-block;
+			margin-top: 30px;
+
+		}
+		span:before{
+			content: '';
+			animation: animate infinite 12s;
+			color: #c5f516;
+
+		}
+		@keyframes animate{
+			5%{
+				content: 'Arunachelam';
+			}
+			50%{
+				content: 'a engineer';
+			}
+			100%{
+				content: 'a programmer';
+			}
+		
+		}
+		.header{
+			position: top right;
+			background-image: url("./image/bg.jpg");
+		    background-blend-mode: hard-light;
+		    background-color: #15225178;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-family: poppins;
+		    height: 100vh;
+			font-weight: bold;
+			font-size: 50px;
+			text-align: center;
+			color:#0ab377;
+			justify-content: center;
+			
+		}
+		.header ul {
+			margin: -14px 0;
+		    position: fixed;
+		    padding: 0;
+		    width: 100vw;
+		    z-index: 111;
+		    background-color: #0ab377;
+
+		}
+		.header ul li{
+			padding: 0;
+		}
+		.header ul li a{
+			color: white;
+		}
+		i{
+			color: white;
+    		background: #162251;
+    		font-size: 1.4rem;
+		}
+		/*.history{
+			position: top right;
+			background-image:url("1.jfif");
+			background-color: red;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: poppins;
+			height: 100vh;*/
+		
+		}
+		.kmuthu{
+			/*position: top right;
+			background-image:url("1.jfif");
+			background-color: black;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: poppins;
+			height: 100vh;
+			font-weight: bold;
+			font-size: 40px;*/
+			text-align: center;
+		
+
+		}
+		.raja{
+			position: top right;
+			/*background-image:url("1.jfif");*/
+			background-color:#182045;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: poppins;
+			padding: 1rem;
+			text-align: center;
+			font-weight: bold;
+		}
+		.muthu{
+			position: top right;
+			/*background-image:url("1.jfif");*/
+			background-color: black;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: poppins;
+			height: 100vh;
+
+		}
+		h2{
+			margin: 0.7rem;
+			text-decoration: underline;
+		}
+
+
+		.history{
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			font-family: zapfino;
+			font-variant: small-caps;
+			background-color: yellow;
+			height:60px;
+			padding: 0;
+
+
+		}
+		.service{
+			text-align: center;
+			font-style: italic;
+			font-size: 30px;
+			font-weight: bold;
+			color:#fff;
+			background-color: gray;
+			font-variant: small-caps;
+		}
+
+		.round{
+			margin-bottom: 1.1rem;
+			color:black;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: left;
+			background-color: #fff;
+		}
+		
+		.about{
+			padding: 0.5rem;
+		}
+		.about-content{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-wrap: wrap;
+		    margin: 0.5rem;
+		    /*box-shadow: 0 0 2px #c4c7cc;*/
+		    /*background-color: rgba(196,199,204,.2);*/
+		}
+		.about-content img,
+		.about-content p{
+			margin: 1rem;
+			border-radius: 10px;
+		}
+		.about-content p{
+			line-height: 23px;
+			text-transform: capitalize;
+			margin-bottom: 0;
+		}
+		.about-contact{
+			display: flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+		}
+		.about-contact {
+			margin: 0 !important;
+		}
+		.about-contact li{
+ 			margin: 1rem;
+ 			padding: 0.5rem;
+ 			border-radius: 10px
+		}
+		.slider_wrapper{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+	    .slider{
+        	position: relative;
+        	transform-style:preserve-3d;
+        	/*animation: rotate 30s linear infinite;*/
+        	text-align: center;
+        	margin-top: 10px;
+        	display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-wrap:wrap; 
+
+
+        }
+        @keyframes rotate{
+        	0%{
+        		transform: perspective(1000px) rotateY(0deg);
+        	}
+        	100%{
+        		transform: perspective(1000px) rotateY(360deg);
+        	}
+        }
+        .slider p{
+        	position:absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	transform-origin: center;
+        	transform-style: preserve-3d;
+        	transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+
+        }
+        .slider  img{
+        	width: 150px;
+        	height: 150px;
+        	border-radius: 10px;
+        	margin: 0.5rem;
+		    align-items: center;
+		    border-radius: 10px;
+		    background-color: var(--bgcolor);
+		    margin: 0.4rem;
+		    padding: 1rem;
+		    box-shadow: rgb(255 255 255 / 5%) -1vmin -1vmin 1vmin, rgb(0 0 0 / 30%) 1vmin 1vmin 1vmin;
+        }
+        .slider p:hover img{
+        	transform:translateY(-50px)scale(1.2);
+        }
+        @media (max-width:500px) {
+				.slider  img{
+					height: 100px;
+					width: 100px;
+				}
+				.wrapper {
+					width: 80%;
+					margin: auto;
+				}
+				.wrapper h1{
+					font-size: 1.5rem;
+				}
+				.wrapper p{
+					font-size: 0.7rem!important;
+				}
+				.wrapper a{
+
+				}
+
+
+		}
+
+	</style>
+
+	<script src="https://kit.fontawesome.com/a076do5399.js"></script>
+		
+	
+</head>
+<body>
+     <div class="header">
+     	<ul>
+     		<li><a href="#"> home</a></li>
+     		<li><a href="#about">About</a></li>
+     		<li><a href="#skills">Skills</a></li>
+     	</ul>	
+     </div>
+     
+     <div class="wrapper">
+     <h1>i am <span></span></h1>
+     <p style="text-transform: capitalize;font-size:1.4rem;font-weight:500;color:#c5f516">i'm not a Great programmer but good programmer With Great Habits</p>
+     
+     </div>
+       
+
+
+     <div class="about" id="about">
+     	<h2 style="text-align: center;">About Me </h2>
+     	<div class="about-content">
+     			<img src="./image/muthu.svg" height="150px"></p>
+     			<div>
+     			<p >hello,i am Arunachelam final year engineering stutent.<br>Having Passion on technology.</p>
+     			<ul class="about-contact">
+     			<li>
+     				<a href="https://github.com/muthu8072">
+     					<i class="fab fa-github"> </i>
+     				</a>
+     			  </li>
+     			<li>
+     				<a href="https://www.linkedin.com/in/Arunachelam-murugan-a4971121a">
+     				<i class="fab fa-linkedin-in"> </i>  
+     				</a>
+
+     			</li>
+     		</ul>
+     	</div>
+
+		</div>     		
+		
+     	
+     </div>
+     
+
+     
+      <div class="raja" id="skills">
+      	<h2 style="color: #FFF" >Skills </h2>
+       <div class="slider_wrapper">
+	        <div class="slider">
+	        	<img src="./image/java.svg"alt="java">
+	        	<img src="./image/python.png"alt="python">
+	        	<img src="./image/html.png"alt="html">
+	        	<img src="./image/css.png"alt="css">
+	        </div>
+	    </div>
+        </div>
+
+ 
+</body>
+</html>
