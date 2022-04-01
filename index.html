@@ -309,11 +309,14 @@
 		    display: flex;
 		    align-items: center;
 		    justify-content: center;
-		    width: 73%;
+		   flex-direction:column;
 		    margin: auto;
 		    padding: 1rem;
 		}
-        
+        	.video iframe{
+        		width:450px;
+        	}
+
 		.sub-title p{
 			text-align: center;
 			margin-bottom: 5px;
@@ -321,14 +324,17 @@
 			font-weight:bold;
 			text-transform: capitalize; 
 		}
-		@media(max-width: 360px){
+		@media(max-width: 460px){
 			.sub-title p{
 				width: 100%;
 				font-size: 14px;
-
-
-
 			}
+			.video{
+				width:100%;
+			}
+			.video iframe{
+        			width:95%;
+        		}
 		}
 
 	</style>
@@ -399,11 +405,11 @@
      <div class="robot" id="projects">
      	<div class="headding">
      		<h2 style="color: #fff;text-align: center; ">project</h2>
-     		
-     		<div class="video">
-     			<iframe width="420" height="315" src="https://www.youtube.com/embed/h2ZG75C3Mec"></iframe>
-      		</div>
      	</div>
+     		<div class="video">
+     			<iframe  height="315" src="https://www.youtube.com/embed/h2ZG75C3Mec"></iframe>
+     		
+      		</div>
 
      </div>     
  
