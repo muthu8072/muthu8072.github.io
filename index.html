@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -305,37 +306,53 @@
 
 
 		}
-		.robot {
-		    display: flex;
-		    align-items: center;
-		    justify-content: center;
-		   flex-direction:column;
-		    margin: auto;
-		    padding: 1rem;
+		.robot{
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-        	.video iframe{
-        		width:450px;
-        	}
+          @media(min-width: 360){
+          	.robot{
+          		width: 100%;
+          	}
+          	
+          }
+		.robot .video{
+			border-radius: 10px solid black;
+			background-color: black;
+			box-shadow: 0 0 10px black;
+			
+		}
+		.video{
+			height:50vh;
+		}
+		
+		.video video{
+			margin: 10px;
+			border-radius: 5px;
+		}
+		@media(max-width: 360px;){
+			.video video{
+				width: 300px;
+			}
+		}
+        
+        .sub-title p{
+        	text-align: center;
+        	margin-bottom: 5px;
+        	font-size: 19px;
+        	font-weight:bold;
+        	text-transform: capitalize; 
+        }
+        @media(max-width: 360px){
+        	.sub-title p{
+          		width: 100%;
+          		font-size: 14px;
+          		
+          		
 
-		.sub-title p{
-			text-align: center;
-			margin-bottom: 5px;
-			font-size: 19px;
-			font-weight:bold;
-			text-transform: capitalize; 
-		}
-		@media(max-width: 460px){
-			.sub-title p{
-				width: 100%;
-				font-size: 14px;
-			}
-			.video{
-				width:100%;
-			}
-			.video iframe{
-        			width:95%;
-        		}
-		}
+          	}
+        }
 
 	</style>
 
@@ -366,7 +383,7 @@
      	<div class="about-content">
      			<img src="./image/muthu.svg" height="150px"></p>
      			<div>
-     			<p >hello,i am muthuraja final year engineering stutent.<br>Having Passion on technology.</p>
+     			<p >hello,i am muthuraja Completed my B.E graduation.<br>Having Passion on technology.</p>
      			<ul class="about-contact">
      			<li>
      				<a href="https://github.com/muthu8072">
@@ -397,6 +414,8 @@
 	        	<img src="./image/python.png"alt="python">
 	        	<img src="./image/html.png"alt="html">
 	        	<img src="./image/css.png"alt="css">
+	        	<img src="./image/js.png"alt="javascript">
+	        	<img src="./image/mysql.png"alt="mysql">
 	        </div>
 	    </div>
         </div>
@@ -405,11 +424,15 @@
      <div class="robot" id="projects">
      	<div class="headding">
      		<h2 style="color: #fff;text-align: center; ">project</h2>
-     	</div>
-     		<div class="video">
-     			<iframe  height="315" src="https://www.youtube.com/embed/h2ZG75C3Mec"></iframe>
      		
-      		</div>
+     		<div class="video">
+     			<video src="https://youtu.be/h2ZG75C3Mec" controls width="400"></video>
+     			<div class="sub-title">
+     				<p>human following and gas aleart sound robot</p>
+     				
+     			</div>
+     		</div>
+     	</div>
 
      </div>     
  
