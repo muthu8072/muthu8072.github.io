@@ -12,7 +12,7 @@
 	z-index: 100;
 	padding: .5rem 5rem;
 	box-shadow: 5px 5px 20px rgba(0,0,0,.5);
-	background: gray;
+	background:gray;
 }
 .navbar .navbar-brand{
 	font-size: 25px;
