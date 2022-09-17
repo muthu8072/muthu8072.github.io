@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif,'poppins';
+
+}
+body{
+	
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	background-color: #000;
+}
+h2{
+
+    
+	position: relative;
+	
+	font-size: 5em;
+	font-weight: 900;
+	color:#fff;
+	z-index:1;
+	overflow: hidden;
+	text-shadow: 2px 3px 4px  red;
+	font-family: arial ;
+		background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	animation: animate 1s linear infinite;
+
+
+}
+@keyframes animate{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400px;
+	}
+}
+/*h2:before
+{
+	content: '';
+	position:absolute;
+	left: 120%;
+	width:120%;
+	height:100%;
+	background:linear-gradient(90deg,transparent 0%,#000 5%,#000 100%);
+    animation: animate 6s linear forwards;
+    animation-delay: 1.5s;
+}
+@keyframes animate{
+	0%{
+		left:110%;
+	}
+	
+	100%{
+		left:-20%;
+	}
+}*/
+h2 span{
+	color:#C21010;
+	
+}
+video{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 2;
+	pointer-events:none;
+	mix-blend-mode: screen;
+
+
+}
+.button{
+	
+	text-align: center;
+	padding-top: 12px;
+	/*height: 30px;
+	width: 120px;
+	background-color: black*/
+
+	
+}
+
+
+.button button{
+	background-color: red;
+	height: 50px;
+	width: 200px;
+	color: black;
+	border-radius:30px;
+	font-weight: bold;
+	animation:blinktext 1s infinite;
+	font-size: 20px;
+	animation-delay: 2s;
+	
+	
+	
+}
+@keyframes blinktext{
+	0%{opacity: 0.1;}
+	10%{
+		opacity: 1;
+		text-shadow: 1px 0px 30px yellow;
+	}	
+	
+}
+.button a{text-decoration: none;}
+
+
+.wrapper{
+	margin:120px auto;
+	max-width:400px;
+	width: 100%;
+	background:#fff;
+	background-color: #423F3E;
+	border-radius: 7px;
+	padding: 25px;
+	color: white;
+	 box-shadow: 6px 7px 8px 9px black;
+
+}
+.wrapper header{
+	font-size:30px;
+	font-weight:bold;
+	background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	animation: animate 10s linear infinite;
+	letter-spacing: 2px;
+
+
+}
+@keyframes animate{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position:400px;
+	}
+}
+.wrapper .inputfield{
+	display: flex;
+	height: 45px;
+	width: 100%;
+	margin: 20px 0;
+
+
+}
+.inputfield input{
+	width:85%;
+	outline: none;
+	height: 100%;
+	
+	font-size:18px;
+
+	
+	padding-left:15px;
+	border-radius: 13px;
+	 background-color: #1B262C;
+	 color: white;
+	 text-shadow: 0 6px 0 black;
+
+}
+.inputfield button{
+	width:60px;
+	height: 100%;
+	border:none;
+	outline: none;
+	background:blue;
+	color:#fff;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius:7px;
+	margin-left: 5px;
+    opacity: 0.6;
+}
+.inputfield button .active{
+	opacity: 1;
+	pointer-events: auto;
+
+}
+.wrapper .todolist{
+	max-height: 250px;
+	overflow-y: auto;
+
+
+
+}
+.todolist li{
+	list-style: none;
+	height: 45px;
+	line-height: 45px;
+    position: relative;
+    background:#f2f2f2;
+    border-radius: 13px;
+    margin-bottom: 8px;
+    padding:0 15px;
+    cursor: default;
+    overflow: hidden;
+    background-color: #1B262C;
+    box-shadow: 1px 2px 1px white;
+    color: #D2001A;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: roman;
+
+}
+.todolist li span{
+	position: absolute;
+
+	right: -45px;
+	color: #fff;
+	width:45px;
+	text-align: center;
+	border-radius: 0 3px 3px 0;
+    background:#e74c3c;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition:all 0.3s ease;
+    
+}
+.todolist li:hover span{
+	right: 0px;
+}
+.wrapper .footer{
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+
+	
+}
+.footer button{
+
+	
+	border:none;
+	outline: none;
+	background:blue;
+	color:#fff;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius:3px;
+	padding: 6px 10px;
+	opacity: 0.6;
+	border-radius:5px;
+}
+.footer button .active{
+	opacity: 1;
+	pointer-events: auto;
+}
